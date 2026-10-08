@@ -1,0 +1,40 @@
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+}
+
+.nav-container .links {
+    display: flex;
+    gap: 15px; 
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    padding: 30px;
+}
+
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+   
+    flex: 1 1 200px; 
+}

@@ -1,0 +1,67 @@
+/* إعدادات أساسية للصفحة */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* أضفنا مسافة علوية لمنع اختفاء المحتوى خلف شريط التنقل المثبت */
+    padding-top: 60px; 
+    /* جعلنا طول الصفحة كبيراً جداً فقط لاختبار التمرير (Scrolling) */
+    height: 200vh; 
+}
+
+/* 1. شريط التنقل المثبت (Fixed Navbar) */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    z-index: 1000; /* يضمن بقاء الشريط فوق كل العناصر الأخرى عند التمرير */
+}
+
+/* 2. حاوية البطاقة (Relative Card) */
+.card {
+    position: relative; /* الأهم في هذا التمرين: لتكون نقطة ارتكاز للشارة */
+    width: 300px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* 3. شارة الإشعارات (Absolute Badge) */
+.badge {
+    position: absolute;
+    top: -15px; /* يبرز الشارة خارج الحد العلوي للبطاقة قليلاً */
+    right: -15px; /* يبرز الشارة خارج الحد الأيمن للبطاقة قليلاً */
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    z-index: 10; /* يضمن ظهور الشارة فوق البطاقة */
+}
+
+/* 4. زر العودة للأعلى (Fixed Button) */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 999; /* يضمن بقاء الزر فوق المحتوى دائمًا عند التمرير */
+}
+
+/* تنسيق النص المساعد */
+.scroll-text {
+    text-align: center;
+    color: #888;
+    margin-top: 50px;
+}

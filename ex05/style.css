@@ -1,0 +1,44 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    margin: 0;
+}
+
+.section-container {
+    text-align: center;
+}
+
+
+
+.loader {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    
+    border: 8px solid #cbd5e1; 
+    border-top-color: #3b82f6; 
+    border-radius: 50%; 
+    
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; 
+    
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
